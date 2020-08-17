@@ -6,6 +6,11 @@ An utility library for python3 that saves time by avoiding to write repetitive c
 
 ### Usage
 
+#### Installing
+
+```bash
+pip install python3-utilities
+```
 
 
 
@@ -33,5 +38,18 @@ dist/
   example_pkg_YOUR_USERNAME_HERE-0.0.1.tar.gz
 
 ```
+
+**To upload to pypi Install twine and run it**
+```
+python3 -m pip install --user --upgrade twine
+python3 -m twine upload --repository pypi dist/*
+or
+python3 -m twine upload dist/*
+```
+> [!NOTE]
+> You will need to provide token from pypi in this step
+> username: __token__
+> password: your-token
+
 
 For updating [See Here](https://packaging.python.org/tutorials/packaging-projects/#uploading-the-distribution-archives)
